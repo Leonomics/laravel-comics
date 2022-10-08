@@ -34,3 +34,45 @@ img{
     color: #2c3e50;
     //margin-top: 60px;
   }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 10px;
+    column-gap: 26px;
+}
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+.comicCover{
+    width:186px;
+    height: 186px;
+}
+
+main{
+    color: white;
+    background-color: black;
+}
+.mainContainer{
+    display: flex;
+    align-items: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 10px;
+    column-gap: 26px;
+}
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+.comicCover{
+    width:186px;
+    height: 186px;
+}

@@ -11,7 +11,20 @@
 
 @include('partials.header')
 <body>
-    @yield('partials.main')
+    <main>
+        <div class="mainContainer container">
+            <div class="grid-container">
+            @forelse($comics as $comic)
+                <div>
+                    <img class="comicCover" src="{{$comic['thumb']}}" />
+                    {{$comic['title']}}
+                </div>
+            @empty
+                <p>non ci sono prodotti</p>
+            @endempty
+            </div>
+        </div>
+    </main>
 </body>
 @include('partials.footer')
 </div>
