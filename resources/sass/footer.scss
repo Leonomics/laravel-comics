@@ -1,0 +1,107 @@
+main{
+    background-color: black;
+    color: white;
+    height: 130px;
+    padding: 0%;
+}
+.productsAndShops{
+    display: flex;
+}
+.imgAndText{
+    display: flex;
+    align-self: center;
+}
+.productsAndShopsWrapper{
+    background-color: #0282f9;
+}
+.buyImg{
+    height: 64px;
+    width: 32px;
+    margin-right: 16px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+h3{
+    align-self: center;
+}
+.footerBiggerSection{
+    background-image: url("../img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footerBiggerWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.dCComicsAndShopWrapper{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-right: 52px;
+}
+.columnsWrapper{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: left;
+    color: white;
+}
+.dC{
+    margin-right: 52px;
+    margin-top: 40px;
+}
+.dCComics{
+    margin-bottom: 24px;
+    margin-top: 40px;
+}
+.sites{
+    margin-top: 40px;
+}
+.shop{
+    margin-bottom: 40px;
+}
+.socialFooter{
+    background-color: #303030;
+}
+.signUpButton{
+    background-color: transparent;
+    padding: 16px;
+    border: 2px solid #0282f9;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.socialFooterWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.socialIcons{
+    display: flex;
+}
+.socialIcon:not(:last-child){
+    margin-right: 14px;
+}
+.socialIcon{
+    width:32px;
+    height: 32px;
+    align-self: center;
+}
+.followUs{
+    margin-right: 14px;
+    color:#0282f9;
+}
+.buyTitle{
+    color: white;
+    font-size: 1rem;
+    margin-right: 72px;
+    white-space: nowrap;
+}
+.bigDCLogo{
+    height: 120%;
+    background-image: url("../img/dc-logo-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 800px;
+    background-size: auto 130%;
+}
