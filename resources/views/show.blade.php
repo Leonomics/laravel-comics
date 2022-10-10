@@ -5,4 +5,5 @@
         <img src="{{$comic['thumb']}}">
     </div>
 
-    <h1>{{ $pasta}}</h1>
+    <h1>{{ $comic['title']}}</h1>
+@endsection

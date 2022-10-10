@@ -23,3 +23,17 @@ Route::get('/', function () {
 Route::get('/single', function () {
     return view('single');
 });
+
+Route::get('/comics/{id}', function ($id) {
+    $comics = config('comics');
+    if($id < count($comics)){
+        $comic = $comics[$id];
+        $data = [
+            'comic' => $comic
+        ];
+
+        return view('show', $data);
+    }else{
+        abort(404);
+    }
+})->where('id', '[0-11]+');
