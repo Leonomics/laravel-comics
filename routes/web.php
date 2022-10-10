@@ -24,10 +24,10 @@ Route::get('/single', function () {
     return view('single');
 });
 
-Route::get('/comics/{id}', function ($id) {
+Route::get('/comics/{index}', function ($index) {
     $comics = config('comics');
-    if($id < count($comics)){
-        $comic = $comics[$id];
+    if($index < count($comics)){
+        $comic = $comics[$index];
         $data = [
             'comic' => $comic
         ];
@@ -36,4 +36,4 @@ Route::get('/comics/{id}', function ($id) {
     }else{
         abort(404);
     }
-})->where('id', '[0-11]+');
+})->where('index', '[0-11]+');
