@@ -3,10 +3,12 @@
 @section('content')
 <div class="mainContainer container">
     <div class="grid-container">
-    @forelse($comics as $comic)
+    @forelse($comics as $key => $comic)
         <div>
-            <img class="comicCover" src="{{$comic['thumb']}}" />
-            {{$comic['title']}}
+            <a href="{{route('prodotto', ['index'=>$key ])}}">
+                <img class="comicCover" src="{{$comic['thumb']}}" />
+                {{$comic['title']}}
+            </a>
         </div>
     @empty
         <p>non ci sono prodotti</p>

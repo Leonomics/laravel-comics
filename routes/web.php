@@ -36,4 +36,4 @@ Route::get('/comics/{index}', function ($index) {
     }else{
         abort(404);
     }
-})->where('index', '[0-11]+');
+})->where('index', '[0-9]+')->name('prodotto');
